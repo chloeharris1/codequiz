@@ -36,7 +36,8 @@ Correct Answer Display
 
 Incorrect Answer Display 
 
-![incorrectanswer](https://user-images.githubusercontent.com/89039793/135199043-a56d488c-9dde-46db-978d-e4abf41cfc78.JPG)
+
+![incorrectanswer](https://user-images.githubusercontent.com/89039793/135199704-6b21e65b-4bfc-4cde-a6da-4eefd5639106.JPG)
 
 
 # Deployed Page Link 
