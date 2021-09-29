@@ -3,9 +3,8 @@
 ## User Story
 
 ```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+This is a coding quiz I created using HTML, CSS, and JavaScript. The quiz has a one-minute timer and displays total number of correct answers after the user hits the submit quiz button. The user is able to review all questions at the end of the quiz using previous and next buttons to see correct answers in green and incorrect answers in red. I was not able to get the user initials input and high scores code to execute correctly. 
+
 ```
 
 ## Acceptance Criteria
@@ -25,3 +24,7 @@ THEN I can save my initials and my score
 ```
 
 ## Mock-Up
+
+
+# Deployed Page Link 
+

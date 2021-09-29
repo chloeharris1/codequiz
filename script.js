@@ -45,6 +45,7 @@
     // Grabs answer containers from quiz
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
+
     // // To keep track of user's answers
     let numCorrect = 0;
 
@@ -70,6 +71,11 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML =`${numCorrect} out of ${myQuestions.length}`;
+    
+    // Couldn't get the three lines of code below to work
+    document.getElementById("initials").style.display = "block"; 
+    localStorage.setItem(initials, numCorrect);
+    document.getElementById("initials").innerHTML = localStorage.getItem("results");
   } 
 
   function showSlide(n) {
