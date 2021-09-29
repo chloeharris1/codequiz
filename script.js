@@ -1,4 +1,6 @@
+// var clear = document.querySelector("#results");
 // Functions
+// Build quiz function
 (function(){
   function buildQuiz(){
   // variable to store the HTML output, answers and questions
@@ -97,7 +99,23 @@
   function showPreviousSlide() {
     showSlide(currentSlide - 1);
   }
- 
+function startQuiz(){
+  // Timer
+  var enter
+  var sec = 60;
+  var time = setInterval(myTimer, 1000);
+  function myTimer() {
+    // enter = prompt("Please enter your initials");
+    document.getElementById('timer').innerHTML = sec + "sec left";
+    sec--;
+    if (sec == -1) {
+        clearInterval(time);
+        alert("Time's Up!");
+    }
+}
+
+document.getElementById("timer").innerHTML="1:00"; 
+}
   // Stores HTML elements in variables 
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
@@ -157,10 +175,13 @@
         correctAnswer: "d"
       }
     ];
+
+
     // Executes build quiz function and displays quiz
     buildQuiz();
 
-    // Pagination
+    // Pagination 
+    const startButton = document.getElementById("start"); 
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");
@@ -170,7 +191,11 @@
     showSlide(currentSlide);
   
     // Event listeners
+    startButton.addEventListener("click", startQuiz);
     submitButton.addEventListener('click', showResults);
     previousButton.addEventListener('click', showPreviousSlide);
     nextButton.addEventListener('click', showNextSlide);
   })();
+
+  // localStorage.setItem("results", "numCorrect");
+  // document.getElementById("results").innerHTML = localStorage.getItem("numCorrect");
